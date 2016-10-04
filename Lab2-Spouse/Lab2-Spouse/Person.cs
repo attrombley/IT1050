@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2_Spouse
 {
-    class Person
+    public class Person
     {
         public int Age;
         public string FirstName;
@@ -19,7 +19,10 @@ namespace Lab2_Spouse
         }
         public void PrintNameAndAge()
         {
-            Console.WriteLine(LastName + "' " + FirstName + " " + "(" + Age + ")");
+            Console.WriteLine(LastName + ", " + FirstName + " " + "(" + Age + ")");
         }
+        public static int Count;
+        public static double SumOfAllAges;
+        public static double AverageAge;
     }
 }
